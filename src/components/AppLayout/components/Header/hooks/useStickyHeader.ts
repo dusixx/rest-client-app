@@ -2,11 +2,13 @@ import { useCallback, useEffect, useState } from 'react';
 
 const DEFAULT_SCROLL_THRESHOLD = 150;
 
-export const useStickyHeader = ({
-  scrollThreshold = DEFAULT_SCROLL_THRESHOLD,
-}: {
-  scrollThreshold: number;
-}): {
+export const useStickyHeader = (
+  {
+    scrollThreshold,
+  }: {
+    scrollThreshold: number;
+  } = { scrollThreshold: DEFAULT_SCROLL_THRESHOLD },
+): {
   isSticky: boolean;
 } => {
   const [isSticky, setIsSticky] = useState(false);

@@ -1,7 +1,7 @@
 import { ERR_SOMETHING_WRONG } from '@/common/constants/index.ts';
+import { TestId } from '@/test-utils/constants.ts';
 import { IconError } from '@common/constants/icons.ts';
 import type { ErrorInfo, JSX } from 'react';
-import { TestId } from 'src/test-utils/constants.ts';
 import styles from './ErrorFallback.module.scss';
 
 export const RESET_BTN_TEXT = 'Reset error';
