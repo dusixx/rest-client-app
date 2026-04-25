@@ -2,7 +2,7 @@
 import { redirect } from '@/i18n/navigation.ts';
 import type { KeyboardEventKey } from '@constants/index.ts';
 import { ERR_SOMETHING_WRONG } from '@constants/index.ts';
-import type { FormEvent } from 'react';
+import type { ChangeEvent } from 'react';
 import { toast } from 'react-toastify';
 import { isError, isString } from './type-guards.ts';
 
@@ -49,7 +49,7 @@ export const getOrCreateElementWithId = (
 };
 
 export const getFormData = (
-  obj: HTMLFormElement | FormEvent<HTMLFormElement>,
+  obj: HTMLFormElement | ChangeEvent<HTMLFormElement>,
 ): Record<string, FormDataEntryValue> => {
   const form = obj instanceof HTMLFormElement ? obj : obj.currentTarget;
   return Object.fromEntries(new FormData(form).entries());

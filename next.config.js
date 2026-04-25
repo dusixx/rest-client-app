@@ -2,7 +2,7 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig = {
-  distDir: './.next',
+  distDir: 'dist',
   reactStrictMode: false,
   sassOptions: {
     prependData: `@use "./src/styles/utils/placeholders" as *; @use "./src/styles/utils/vars" as *;`,

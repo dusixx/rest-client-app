@@ -5,8 +5,8 @@ import {
   ID_TOKEN_EXPIRED_LAG_MINUTES,
   getIdTokenLaggedMillisecsLeft,
 } from '@/components/ProvidersWrapper/AuthProvider/AuthProvider.utils.tsx';
+import type { DecodedIdToken } from 'firebase-admin/auth';
 import { getAuth } from 'firebase-admin/auth';
-import type { DecodedIdToken } from 'node_modules/firebase-admin/lib/auth/token-verifier';
 import './config.ts';
 
 export type DecodedIdTokenExtended = DecodedIdToken & {
