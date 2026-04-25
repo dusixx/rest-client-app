@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -43,7 +42,9 @@
     "prettier.config.js",
     "./dist/types/**/*.ts",
     "next.config.js",
-    "./src"
+    "./src",
+    "dist/types/**/*.ts",
+    "dist/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

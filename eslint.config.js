@@ -32,7 +32,6 @@ export default defineConfig([
         ecmaFeatures: { jsx: true },
         ecmaVersion: ECMA_VERSION,
         sourceType: 'module',
-        project: './tsconfig.json',
         globals: globals.browser,
         tsconfigRootDir: import.meta.dirname,
       },
